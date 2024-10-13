@@ -6,7 +6,7 @@
 #define Max_Professores 3
 #define Max_Disciplinas 3
 
-//Definição das structs
+// Definição das structs
 
 typedef struct {
   int dia, mes, ano;
@@ -23,31 +23,96 @@ typedef struct {
   int semestre;
 } materias;
 
-//Inicialização das variáveis globais
+// Inicialização das variáveis globais
 
 pessoas aluno[Max_Alunos], professor[Max_Professores];
 materias disciplinas[Max_Disciplinas];
 
-//Funções
+// Funções
 
 int listar(int tipoLista) {
   // Com base no tipo informado, chama as funções correspondentes de listagem
   // (novo menu com os tipos de listagem, de acordo com o tipListar informado no
   // main)
+
+  switch (tipoLista) {
+  case 1: {
+    // apresentar opções para listagem de alunos
+    break;
+  }
+  case 2: {
+    // apresentar opções para listagem de professores
+    break;
+  }
+  case 3: {
+    // apresentar opções para listagem de disciplinas
+    break;
+  }
+  }
+
   return 0;
 }
 
 int cadastrar(int tipoCadastrar) {
   // fazer cadastro conforme tipo informado
+
+  switch (tipoCadastrar) {
+  case 1: {
+    // Cadastrar aluno
+    break;
+  }
+  case 2: {
+    // Cadastrar professor
+    break;
+  }
+  case 3: {
+    // Cadastrar disciplina
+    break;
+  }
+  }
+
   return 0;
 }
+
 int excluir(int tipoExcluir) {
   // fazer exclusão conforme tipo informado
+
+  switch (tipoExcluir) {
+  case 1: {
+    // Excluir aluno
+    break;
+  }
+  case 2: {
+    // Excluir professor
+    break;
+  }
+  case 3: {
+    // Excluir disciplina
+    break;
+  }
+  }
+
   return 0;
 }
 
 int alterar(int tipoAlterar) {
-  // fazer alteração conforme tipo informado
+  // Fazer alteração conforme tipo informado
+
+  switch (tipoAlterar) {
+  case 1: {
+    // Alterar aluno
+    break;
+  }
+  case 2: {
+    // Alterar professor
+    break;
+  }
+  case 3: {
+    // Alterar disciplina
+    break;
+  }
+  }
+
   return 0;
 }
 
